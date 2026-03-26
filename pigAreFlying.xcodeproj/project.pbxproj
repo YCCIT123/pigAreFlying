@@ -6,47 +6,138 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		423E1EFDD1ABDF94E4ED303A /* Pods_pigAreFlying.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E01C735453C43A91CAC9E4 /* Pods_pigAreFlying.framework */; };
+		C6560C4C2F73C90800B540BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6560C482F73C90800B540BB /* Assets.xcassets */; };
+		C6560C4E2F73C90800B540BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6560C472F73C90800B540BB /* AppDelegate.swift */; };
+		C6560C572F73CE6600B540BB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6560C562F73CE6600B540BB /* RootViewController.swift */; };
+		C6560C592F73CE8700B540BB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6560C582F73CE8700B540BB /* SettingsViewController.swift */; };
+		C6560C5B2F73CE9300B540BB /* InsightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6560C5A2F73CE9300B540BB /* InsightsViewController.swift */; };
+		C6560C5D2F73CE9F00B540BB /* FocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6560C5C2F73CE9F00B540BB /* FocusViewController.swift */; };
+		C6560C5F2F73CEA900B540BB /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6560C5E2F73CEA900B540BB /* TasksViewController.swift */; };
+		C6560C612F73CEB600B540BB /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6560C602F73CEB600B540BB /* TodayViewController.swift */; };
+		D10000032F74000100B540BB /* AppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000042F74000100B540BB /* AppTab.swift */; };
+		D10000052F74000100B540BB /* AppScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000062F74000100B540BB /* AppScreenFactory.swift */; };
+		D10000072F74000100B540BB /* BottomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000082F74000100B540BB /* BottomTabBarView.swift */; };
+		D10000092F74000100B540BB /* BaseFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D100000A2F74000100B540BB /* BaseFeatureViewController.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		03C2940D4340F3B635BC2005 /* Pods-pigAreFlying.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pigAreFlying.release.xcconfig"; path = "Target Support Files/Pods-pigAreFlying/Pods-pigAreFlying.release.xcconfig"; sourceTree = "<group>"; };
+		53E01C735453C43A91CAC9E4 /* Pods_pigAreFlying.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pigAreFlying.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B87A95194F30937881F0420 /* Pods-pigAreFlying.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pigAreFlying.debug.xcconfig"; path = "Target Support Files/Pods-pigAreFlying/Pods-pigAreFlying.debug.xcconfig"; sourceTree = "<group>"; };
+		C6560C472F73C90800B540BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6560C482F73C90800B540BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6560C492F73C90800B540BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6560C562F73CE6600B540BB /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		C6560C582F73CE8700B540BB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C6560C5A2F73CE9300B540BB /* InsightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsViewController.swift; sourceTree = "<group>"; };
+		C6560C5C2F73CE9F00B540BB /* FocusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusViewController.swift; sourceTree = "<group>"; };
+		C6560C5E2F73CEA900B540BB /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		C6560C602F73CEB600B540BB /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		C66585F72F73AD6600D8F806 /* pigAreFlying.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pigAreFlying.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10000042F74000100B540BB /* AppTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTab.swift; sourceTree = "<group>"; };
+		D10000062F74000100B540BB /* AppScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScreenFactory.swift; sourceTree = "<group>"; };
+		D10000082F74000100B540BB /* BottomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabBarView.swift; sourceTree = "<group>"; };
+		D100000A2F74000100B540BB /* BaseFeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseFeatureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		C66586092F73AD6800D8F806 /* Exceptions for "pigAreFlying" folder in "pigAreFlying" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = C66585F62F73AD6600D8F806 /* pigAreFlying */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		C66585F92F73AD6600D8F806 /* pigAreFlying */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				C66586092F73AD6800D8F806 /* Exceptions for "pigAreFlying" folder in "pigAreFlying" target */,
-			);
-			path = pigAreFlying;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C66585F42F73AD6600D8F806 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				423E1EFDD1ABDF94E4ED303A /* Pods_pigAreFlying.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE9A6D2DF5E282CFC99CBD92 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B87A95194F30937881F0420 /* Pods-pigAreFlying.debug.xcconfig */,
+				03C2940D4340F3B635BC2005 /* Pods-pigAreFlying.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C6560C4B2F73C90800B540BB /* pigAreFlying */ = {
+			isa = PBXGroup;
+			children = (
+				D10000042F74000100B540BB /* AppTab.swift */,
+				D10000062F74000100B540BB /* AppScreenFactory.swift */,
+				D10000082F74000100B540BB /* BottomTabBarView.swift */,
+				C6560C502F73C90C00B540BB /* Features */,
+				C6560C472F73C90800B540BB /* AppDelegate.swift */,
+				C6560C482F73C90800B540BB /* Assets.xcassets */,
+				C6560C492F73C90800B540BB /* Info.plist */,
+				C6560C562F73CE6600B540BB /* RootViewController.swift */,
+			);
+			path = pigAreFlying;
+			sourceTree = "<group>";
+		};
+		C6560C502F73C90C00B540BB /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D100000D2F74000100B540BB /* Common */,
+				C6560C552F73C97600B540BB /* Settings */,
+				C6560C542F73C96700B540BB /* Insights */,
+				C6560C532F73C95C00B540BB /* Focus */,
+				C6560C522F73C95100B540BB /* Tasks */,
+				C6560C512F73C94500B540BB /* Today */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		C6560C512F73C94500B540BB /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				C6560C602F73CEB600B540BB /* TodayViewController.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		C6560C522F73C95100B540BB /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				C6560C5E2F73CEA900B540BB /* TasksViewController.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		C6560C532F73C95C00B540BB /* Focus */ = {
+			isa = PBXGroup;
+			children = (
+				C6560C5C2F73CE9F00B540BB /* FocusViewController.swift */,
+			);
+			path = Focus;
+			sourceTree = "<group>";
+		};
+		C6560C542F73C96700B540BB /* Insights */ = {
+			isa = PBXGroup;
+			children = (
+				C6560C5A2F73CE9300B540BB /* InsightsViewController.swift */,
+			);
+			path = Insights;
+			sourceTree = "<group>";
+		};
+		C6560C552F73C97600B540BB /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C6560C582F73CE8700B540BB /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		C66585EE2F73AD6600D8F806 = {
 			isa = PBXGroup;
 			children = (
-				C66585F92F73AD6600D8F806 /* pigAreFlying */,
+				C6560C4B2F73C90800B540BB /* pigAreFlying */,
 				C66585F82F73AD6600D8F806 /* Products */,
+				AE9A6D2DF5E282CFC99CBD92 /* Pods */,
+				F84878A5E1A63791F7AC3A58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +149,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D100000D2F74000100B540BB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D100000A2F74000100B540BB /* BaseFeatureViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F84878A5E1A63791F7AC3A58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53E01C735453C43A91CAC9E4 /* Pods_pigAreFlying.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,20 +172,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C665860A2F73AD6800D8F806 /* Build configuration list for PBXNativeTarget "pigAreFlying" */;
 			buildPhases = (
+				369409F149914FAB96BE52D6 /* [CP] Check Pods Manifest.lock */,
 				C66585F32F73AD6600D8F806 /* Sources */,
 				C66585F42F73AD6600D8F806 /* Frameworks */,
 				C66585F52F73AD6600D8F806 /* Resources */,
+				8C82117BEFEDF9191D7FCDC8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				C66585F92F73AD6600D8F806 /* pigAreFlying */,
-			);
 			name = pigAreFlying;
-			packageProductDependencies = (
-			);
 			productName = pigAreFlying;
 			productReference = C66585F72F73AD6600D8F806 /* pigAreFlying.app */;
 			productType = "com.apple.product-type.application";
@@ -122,16 +226,70 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6560C4C2F73C90800B540BB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		369409F149914FAB96BE52D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pigAreFlying-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C82117BEFEDF9191D7FCDC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pigAreFlying/Pods-pigAreFlying-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pigAreFlying/Pods-pigAreFlying-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pigAreFlying/Pods-pigAreFlying-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C66585F32F73AD6600D8F806 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D10000052F74000100B540BB /* AppScreenFactory.swift in Sources */,
+				D10000072F74000100B540BB /* BottomTabBarView.swift in Sources */,
+				D10000092F74000100B540BB /* BaseFeatureViewController.swift in Sources */,
+				D10000032F74000100B540BB /* AppTab.swift in Sources */,
+				C6560C572F73CE6600B540BB /* RootViewController.swift in Sources */,
+				C6560C612F73CEB600B540BB /* TodayViewController.swift in Sources */,
+				C6560C5D2F73CE9F00B540BB /* FocusViewController.swift in Sources */,
+				C6560C4E2F73C90800B540BB /* AppDelegate.swift in Sources */,
+				C6560C5B2F73CE9300B540BB /* InsightsViewController.swift in Sources */,
+				C6560C592F73CE8700B540BB /* SettingsViewController.swift in Sources */,
+				C6560C5F2F73CEA900B540BB /* TasksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +298,7 @@
 /* Begin XCBuildConfiguration section */
 		C665860B2F73AD6800D8F806 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B87A95194F30937881F0420 /* Pods-pigAreFlying.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -150,9 +309,9 @@
 				INFOPLIST_FILE = pigAreFlying/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -168,6 +327,7 @@
 		};
 		C665860C2F73AD6800D8F806 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03C2940D4340F3B635BC2005 /* Pods-pigAreFlying.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -178,9 +338,9 @@
 				INFOPLIST_FILE = pigAreFlying/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -231,7 +391,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -294,7 +454,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
