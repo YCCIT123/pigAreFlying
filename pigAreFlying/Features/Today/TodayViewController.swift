@@ -57,6 +57,7 @@ final class TodayViewController: BaseFeatureViewController {
 
         let button = UIButton(type: .system)
         button.configuration = configuration
+        button.addTarget(self, action: #selector(self.testAction), for: .touchUpInside)
         return button
     }()
 
@@ -108,5 +109,11 @@ final class TodayViewController: BaseFeatureViewController {
             make.leading.trailing.equalToSuperview().inset(20)
             make.height.equalTo(50)
         }
+    }
+    
+    
+    @objc private func testAction() {
+        guard let navigationController = self.navigationController else { return }
+        YGDRouterManager.shared.open("pig://focus/session?id=1&userName=aaaa", on: navigationController, extraParams: ["from": "home"])
     }
 }

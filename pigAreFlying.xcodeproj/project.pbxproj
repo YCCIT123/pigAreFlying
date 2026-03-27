@@ -16,6 +16,7 @@
 		C6560C5D2F73CE9F00B540BB /* FocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6560C5C2F73CE9F00B540BB /* FocusViewController.swift */; };
 		C6560C5F2F73CEA900B540BB /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6560C5E2F73CEA900B540BB /* TasksViewController.swift */; };
 		C6560C612F73CEB600B540BB /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6560C602F73CEB600B540BB /* TodayViewController.swift */; };
+		C67707282F76206F00436888 /* YGDRouterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67707272F76206F00436888 /* YGDRouterManager.swift */; };
 		D10000032F74000100B540BB /* AppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000042F74000100B540BB /* AppTab.swift */; };
 		D10000052F74000100B540BB /* AppScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000062F74000100B540BB /* AppScreenFactory.swift */; };
 		D10000072F74000100B540BB /* BottomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000082F74000100B540BB /* BottomTabBarView.swift */; };
@@ -36,6 +37,7 @@
 		C6560C5E2F73CEA900B540BB /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		C6560C602F73CEB600B540BB /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		C66585F72F73AD6600D8F806 /* pigAreFlying.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pigAreFlying.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C67707272F76206F00436888 /* YGDRouterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YGDRouterManager.swift; sourceTree = "<group>"; };
 		D10000042F74000100B540BB /* AppTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTab.swift; sourceTree = "<group>"; };
 		D10000062F74000100B540BB /* AppScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScreenFactory.swift; sourceTree = "<group>"; };
 		D10000082F74000100B540BB /* BottomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabBarView.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		C6560C4B2F73C90800B540BB /* pigAreFlying */ = {
 			isa = PBXGroup;
 			children = (
+				C67707252F76202E00436888 /* Tool */,
 				D10000042F74000100B540BB /* AppTab.swift */,
 				D10000062F74000100B540BB /* AppScreenFactory.swift */,
 				D10000082F74000100B540BB /* BottomTabBarView.swift */,
@@ -81,7 +84,6 @@
 		C6560C502F73C90C00B540BB /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				D100000D2F74000100B540BB /* Common */,
 				C6560C552F73C97600B540BB /* Settings */,
 				C6560C542F73C96700B540BB /* Insights */,
 				C6560C532F73C95C00B540BB /* Focus */,
@@ -147,6 +149,23 @@
 				C66585F72F73AD6600D8F806 /* pigAreFlying.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C67707252F76202E00436888 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				D100000D2F74000100B540BB /* Common */,
+				C67707262F76204800436888 /* Router */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		C67707262F76204800436888 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C67707272F76206F00436888 /* YGDRouterManager.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		D100000D2F74000100B540BB /* Common */ = {
@@ -284,6 +303,7 @@
 				D10000092F74000100B540BB /* BaseFeatureViewController.swift in Sources */,
 				D10000032F74000100B540BB /* AppTab.swift in Sources */,
 				C6560C572F73CE6600B540BB /* RootViewController.swift in Sources */,
+				C67707282F76206F00436888 /* YGDRouterManager.swift in Sources */,
 				C6560C612F73CEB600B540BB /* TodayViewController.swift in Sources */,
 				C6560C5D2F73CE9F00B540BB /* FocusViewController.swift in Sources */,
 				C6560C4E2F73C90800B540BB /* AppDelegate.swift in Sources */,
