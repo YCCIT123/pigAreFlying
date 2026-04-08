@@ -18,6 +18,7 @@
 		C6560C612F73CEB600B540BB /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6560C602F73CEB600B540BB /* TodayViewController.swift */; };
 		C67707282F76206F00436888 /* YGDRouterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67707272F76206F00436888 /* YGDRouterManager.swift */; };
 		C677072A2F7685EF00436888 /* YGDUnifiedRegistrationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67707292F7685EF00436888 /* YGDUnifiedRegistrationRouter.swift */; };
+		C6D5053E2F7A1B71000F1141 /* YCGTodayHomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D5053D2F7A1B71000F1141 /* YCGTodayHomeCoordinator.swift */; };
 		D10000032F74000100B540BB /* AppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000042F74000100B540BB /* AppTab.swift */; };
 		D10000052F74000100B540BB /* AppScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000062F74000100B540BB /* AppScreenFactory.swift */; };
 		D10000072F74000100B540BB /* BottomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000082F74000100B540BB /* BottomTabBarView.swift */; };
@@ -40,6 +41,7 @@
 		C66585F72F73AD6600D8F806 /* pigAreFlying.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pigAreFlying.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C67707272F76206F00436888 /* YGDRouterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YGDRouterManager.swift; sourceTree = "<group>"; };
 		C67707292F7685EF00436888 /* YGDUnifiedRegistrationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YGDUnifiedRegistrationRouter.swift; sourceTree = "<group>"; };
+		C6D5053D2F7A1B71000F1141 /* YCGTodayHomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCGTodayHomeCoordinator.swift; sourceTree = "<group>"; };
 		D10000042F74000100B540BB /* AppTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTab.swift; sourceTree = "<group>"; };
 		D10000062F74000100B540BB /* AppScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScreenFactory.swift; sourceTree = "<group>"; };
 		D10000082F74000100B540BB /* BottomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabBarView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				C6560C602F73CEB600B540BB /* TodayViewController.swift */,
+				C6D5053D2F7A1B71000F1141 /* YCGTodayHomeCoordinator.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D10000052F74000100B540BB /* AppScreenFactory.swift in Sources */,
+				C6D5053E2F7A1B71000F1141 /* YCGTodayHomeCoordinator.swift in Sources */,
 				D10000072F74000100B540BB /* BottomTabBarView.swift in Sources */,
 				D10000092F74000100B540BB /* BaseFeatureViewController.swift in Sources */,
 				D10000032F74000100B540BB /* AppTab.swift in Sources */,

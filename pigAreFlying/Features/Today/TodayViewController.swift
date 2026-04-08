@@ -112,8 +112,8 @@ final class TodayViewController: BaseFeatureViewController {
     }
     
     
+    /// 触发跨 Tab 的专注会话路由演示。
     @objc private func testAction() {
-        guard let navigationController = self.navigationController else { return }
-        YGDRouterManager.shared.open("pig://focus/session?id=1&userName=aaaa", on: navigationController, extraParams: ["from": "home"])
+        YGDRouterManager.shared.open("pig://focus/session?id=1&userName=aaaa", extraParams: ["from": "home"], style: .switchTabAndPopToExisting)
     }
 }

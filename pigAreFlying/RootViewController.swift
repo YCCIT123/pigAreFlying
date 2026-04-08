@@ -53,6 +53,7 @@ final class RootViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        YGDRouterManager.shared.attachAppNavigator(self)
         setupViewHierarchy()
         setupConstraints()
         bottomTabBarView.delegate = self
@@ -61,7 +62,7 @@ final class RootViewController: UIViewController {
     }
 }
 
-private extension RootViewController {
+extension RootViewController {
     /// 配置根控制器的视图层级。
     func setupViewHierarchy() {
         view.backgroundColor = .systemBackground
@@ -136,5 +137,17 @@ extension RootViewController: BottomTabBarViewDelegate {
         }
 
         selectTab(tab)
+    }
+}
+
+extension RootViewController: YGDAppNavigator {
+    /// 激活指定的 Tab。
+    func activateTab(_ tab: AppTab) {
+        selectTab(tab)
+    }
+
+    /// 返回当前正在使用的导航控制器。
+    func currentNavigationController() -> UINavigationController {
+        return navigationController(for: selectedTab)
     }
 }
