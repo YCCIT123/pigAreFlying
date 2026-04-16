@@ -5,11 +5,10 @@
 //  Created by yangchengcheng on 2026/3/25.
 //
 
-import UIKit
 import SnapKit
+import UIKit
 
 final class FocusViewController: BaseFeatureViewController {
-
     /// 页面主标题。
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
@@ -18,6 +17,7 @@ final class FocusViewController: BaseFeatureViewController {
         label.text = "Focus"
         return label
     }()
+
     /// 页面副标题。
     private lazy var subtitleLabel: UILabel = {
         let label = UILabel()
@@ -27,6 +27,7 @@ final class FocusViewController: BaseFeatureViewController {
         label.text = "这个页面现在只承载专注页本身，后续可以独立追加计时器、白噪音和状态管理。"
         return label
     }()
+
     /// 专注状态卡片。
     private lazy var sessionCardView: UIView = {
         let view = UIView()
@@ -34,6 +35,7 @@ final class FocusViewController: BaseFeatureViewController {
         view.layer.cornerRadius = 20
         return view
     }()
+
     /// 倒计时标签。
     private lazy var timerLabel: UILabel = {
         let label = UILabel()
@@ -43,6 +45,7 @@ final class FocusViewController: BaseFeatureViewController {
         label.text = "25:00"
         return label
     }()
+
     /// 专注说明标签。
     private lazy var statusLabel: UILabel = {
         let label = UILabel()
@@ -53,6 +56,7 @@ final class FocusViewController: BaseFeatureViewController {
         label.text = "当前没有进行中的专注会话，开始按钮后面可以直接接你的专注逻辑。"
         return label
     }()
+
     /// 开始专注按钮。
     private lazy var startButton: UIButton = {
         var configuration = UIButton.Configuration.filled()

@@ -9,7 +9,6 @@ import UIKit
 
 /// Today 首页协调器。
 final class YCGTodayHomeCoordinator: Coordinator {
-
     /// 当前协调器对应的路由目标。
     let target: YGDRouteTarget
 
@@ -20,6 +19,6 @@ final class YCGTodayHomeCoordinator: Coordinator {
 
     /// 构建 Today 首页页面。
     func buildViewController() -> UIViewController {
-        return TodayViewController()
+        TodayViewController()
     }
 }

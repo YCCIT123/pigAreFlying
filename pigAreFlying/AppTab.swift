@@ -18,15 +18,15 @@ enum AppTab: Int {
     var title: String {
         switch self {
         case .today:
-            return "Today"
+            "Today"
         case .tasks:
-            return "Tasks"
+            "Tasks"
         case .focus:
-            return "Focus"
+            "Focus"
         case .insights:
-            return "Insights"
+            "Insights"
         case .settings:
-            return "Settings"
+            "Settings"
         }
     }
 
@@ -34,15 +34,15 @@ enum AppTab: Int {
     var symbolName: String {
         switch self {
         case .today:
-            return "sun.max"
+            "sun.max"
         case .tasks:
-            return "checkmark.square"
+            "checkmark.square"
         case .focus:
-            return "scope"
+            "scope"
         case .insights:
-            return "chart.bar"
+            "chart.bar"
         case .settings:
-            return "gearshape"
+            "gearshape"
         }
     }
 
@@ -50,15 +50,15 @@ enum AppTab: Int {
     var selectedSymbolName: String {
         switch self {
         case .today:
-            return "sun.max.fill"
+            "sun.max.fill"
         case .tasks:
-            return "checkmark.square.fill"
+            "checkmark.square.fill"
         case .focus:
-            return "scope"
+            "scope"
         case .insights:
-            return "chart.bar.fill"
+            "chart.bar.fill"
         case .settings:
-            return "gearshape.fill"
+            "gearshape.fill"
         }
     }
 }

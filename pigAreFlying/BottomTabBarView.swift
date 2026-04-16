@@ -5,8 +5,8 @@
 //  Created by Codex on 2026/3/25.
 //
 
-import UIKit
 import SnapKit
+import UIKit
 
 protocol BottomTabBarViewDelegate: AnyObject {
     /// 处理底部标签栏的点击事件。
@@ -46,7 +46,8 @@ final class BottomTabBarView: UIView {
     }
 
     /// 兼容 storyboard 初始化入口。
-    required init?(coder: NSCoder) {
+    @available(*, unavailable)
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
@@ -158,7 +159,8 @@ private final class BottomTabBarItemView: UIControl {
     }
 
     /// 兼容 storyboard 初始化入口。
-    required init?(coder: NSCoder) {
+    @available(*, unavailable)
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 

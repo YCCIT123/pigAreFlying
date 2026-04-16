@@ -5,9 +5,9 @@
 //  Created by yangchengcheng on 2026/3/27.
 //
 
-import UIKit
-import SnapKit
 import SafariServices
+import SnapKit
+import UIKit
 
 /// 协调器工厂闭包，用于根据路由目标构建具体业务协调器。
 typealias YGDCoordinatorFactory = (YGDRouteTarget) -> Coordinator
@@ -97,7 +97,7 @@ struct YGDRemoteRouteRule {
 
     /// 判断当前规则是否命中指定 URL。
     func matches(_ urlString: String) -> Bool {
-        return urlString.hasPrefix(matchPrefix)
+        urlString.hasPrefix(matchPrefix)
     }
 }
 
@@ -163,7 +163,6 @@ private enum YGDRouteDecision {
 
 /// 统一路由中心，负责接收 URL、执行远端规则并分发给本地 Coordinator。
 final class YGDRouterManager: NSObject {
-
     /// 全局单例路由管理器。
     static let shared = YGDRouterManager()
 
@@ -183,7 +182,7 @@ final class YGDRouterManager: NSObject {
     private weak var appNavigator: YGDAppNavigator?
 
     /// 单例初始化方法。
-    private override init() {
+    override private init() {
         super.init()
     }
 
@@ -257,7 +256,7 @@ private extension YGDRouterManager {
         }
 
         let intercepted = interceptors.allSatisfy { interceptor in
-            return interceptor(resolutionContext.finalURLString)
+            interceptor(resolutionContext.finalURLString)
         }
 
         guard intercepted else {
@@ -276,7 +275,7 @@ private extension YGDRouterManager {
 
         let urlParams = parseParameters(from: url)
         let finalParams = urlParams.merging(extraParams) { _, newValue in
-            return newValue
+            newValue
         }
         let version = resolutionContext.forcedVersion ?? defaultVersions[routeKey] ?? "v1"
         let storageKey = makeStorageKey(routeKey: routeKey, version: version)
@@ -297,14 +296,14 @@ private extension YGDRouterManager {
 
         for rule in remoteRules where rule.matches(workingURLString) {
             switch rule.action {
-            case .rewrite(let targetPrefix):
+            case let .rewrite(targetPrefix):
                 workingURLString = rewritePrefix(in: workingURLString, sourcePrefix: rule.matchPrefix, targetPrefix: targetPrefix)
-            case .forceNativeVersion(let version):
+            case let .forceNativeVersion(version):
                 forcedVersion = version
-            case .degradeToWeb(let urlString):
+            case let .degradeToWeb(urlString):
                 let webURL = URL(string: urlString)
                 return YGDRouteResolutionContext(finalURLString: workingURLString, forcedVersion: forcedVersion, blockedMessage: webURL == nil ? "降级地址无效: \(urlString)" : nil, webURL: webURL)
-            case .block(let message):
+            case let .block(message):
                 return YGDRouteResolutionContext(finalURLString: workingURLString, forcedVersion: forcedVersion, blockedMessage: message, webURL: nil)
             }
         }
@@ -315,7 +314,7 @@ private extension YGDRouterManager {
     /// 执行 Router 最终产生的路由动作。
     func execute(decision: YGDRouteDecision, fallbackNavigationController: UINavigationController?) -> Bool {
         switch decision {
-        case .native(let item, let target):
+        case let .native(item, target):
             guard let navigationController = makeNavigationController(for: target, fallbackNavigationController: fallbackNavigationController) else {
                 return false
             }
@@ -333,7 +332,7 @@ private extension YGDRouterManager {
             navigationController.pushViewController(viewController, animated: true)
             return true
 
-        case .web(let url):
+        case let .web(url):
             guard let navigationController = makePresentationNavigationController(fallbackNavigationController: fallbackNavigationController) else {
                 return false
             }
@@ -342,7 +341,7 @@ private extension YGDRouterManager {
             navigationController.present(safariViewController, animated: true)
             return true
 
-        case .blocked(let message):
+        case let .blocked(message):
             guard let navigationController = makePresentationNavigationController(fallbackNavigationController: fallbackNavigationController) else {
                 return false
             }
@@ -385,9 +384,9 @@ private extension YGDRouterManager {
     func shouldPopToExisting(for style: YGDRouteOpenStyle) -> Bool {
         switch style {
         case .push, .switchTabAndPush:
-            return false
+            false
         case .popToExisting, .switchTabAndPopToExisting:
-            return true
+            true
         }
     }
 
@@ -434,12 +433,12 @@ private extension YGDRouterManager {
 
     /// 规范化输入的路由主键。
     func normalizeRouteKey(_ routeKey: String) -> String {
-        return routeKey.trimmingCharacters(in: CharacterSet(charactersIn: "/"))
+        routeKey.trimmingCharacters(in: CharacterSet(charactersIn: "/"))
     }
 
     /// 生成内部路由存储键。
     func makeStorageKey(routeKey: String, version: String) -> String {
-        return "\(normalizeRouteKey(routeKey))@\(version)"
+        "\(normalizeRouteKey(routeKey))@\(version)"
     }
 
     /// 解析 URL 中携带的 query 参数。
@@ -505,7 +504,7 @@ final class YGDStaticViewControllerCoordinator: Coordinator {
 
     /// 构建最终页面。
     func buildViewController() -> UIViewController {
-        return viewControllerBuilder()
+        viewControllerBuilder()
     }
 }
 
@@ -521,7 +520,7 @@ final class YGDTaskDetailV1Coordinator: Coordinator {
 
     /// 构建任务详情 v1 页面。
     func buildViewController() -> UIViewController {
-        return YGDTaskDetailViewController(target: target, versionTitleText: "Task Detail V1", accentColor: .systemBlue)
+        YGDTaskDetailViewController(target: target, versionTitleText: "Task Detail V1", accentColor: .systemBlue)
     }
 }
 
@@ -537,7 +536,7 @@ final class YGDTaskDetailV2Coordinator: Coordinator {
 
     /// 构建任务详情 v2 页面。
     func buildViewController() -> UIViewController {
-        return YGDTaskDetailViewController(target: target, versionTitleText: "Task Detail V2", accentColor: .systemGreen)
+        YGDTaskDetailViewController(target: target, versionTitleText: "Task Detail V2", accentColor: .systemGreen)
     }
 }
 
@@ -553,7 +552,7 @@ final class YGDFocusSessionCoordinator: Coordinator {
 
     /// 构建专注会话页面。
     func buildViewController() -> UIViewController {
-        return YGDFocusSessionViewController(target: target)
+        YGDFocusSessionViewController(target: target)
     }
 }
 
@@ -570,12 +569,12 @@ final class YGDTaskDetailViewController: BaseFeatureViewController, YGDRouteStac
 
     /// 当前页面对应的业务路由主键。
     var routeKey: String {
-        return target.routeKey
+        target.routeKey
     }
 
     /// 当前页面的业务身份标识。
     var routeIdentity: String? {
-        return target.identity
+        target.identity
     }
 
     /// 页面主标题标签。
@@ -633,7 +632,8 @@ final class YGDTaskDetailViewController: BaseFeatureViewController, YGDRouteStac
     }
 
     /// `UIViewController` 的解码初始化方法。
-    required init?(coder: NSCoder) {
+    @available(*, unavailable)
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
@@ -690,9 +690,9 @@ private extension YGDTaskDetailViewController {
         }
 
         let lines = target.params.sorted { lhs, rhs in
-            return lhs.key < rhs.key
+            lhs.key < rhs.key
         }.map { key, value in
-            return "\(key): \(value)"
+            "\(key): \(value)"
         }
 
         return lines.joined(separator: "\n")
@@ -706,12 +706,12 @@ final class YGDFocusSessionViewController: BaseFeatureViewController, YGDRouteSt
 
     /// 当前页面对应的业务路由主键。
     var routeKey: String {
-        return target.routeKey
+        target.routeKey
     }
 
     /// 当前页面的业务身份标识。
     var routeIdentity: String? {
-        return target.identity
+        target.identity
     }
 
     /// 页面主标题标签。
@@ -767,7 +767,8 @@ final class YGDFocusSessionViewController: BaseFeatureViewController, YGDRouteSt
     }
 
     /// `UIViewController` 的解码初始化方法。
-    required init?(coder: NSCoder) {
+    @available(*, unavailable)
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
@@ -828,12 +829,12 @@ private extension YGDFocusSessionViewController {
 extension TodayViewController: YGDRouteStackIdentifiable {
     /// 当前页面对应的业务路由主键。
     var routeKey: String {
-        return "today/home"
+        "today/home"
     }
 
     /// 当前页面的业务身份标识。
     var routeIdentity: String? {
-        return nil
+        nil
     }
 }
 
@@ -841,12 +842,12 @@ extension TodayViewController: YGDRouteStackIdentifiable {
 extension TasksViewController: YGDRouteStackIdentifiable {
     /// 当前页面对应的业务路由主键。
     var routeKey: String {
-        return "tasks/home"
+        "tasks/home"
     }
 
     /// 当前页面的业务身份标识。
     var routeIdentity: String? {
-        return nil
+        nil
     }
 }
 
@@ -854,12 +855,12 @@ extension TasksViewController: YGDRouteStackIdentifiable {
 extension FocusViewController: YGDRouteStackIdentifiable {
     /// 当前页面对应的业务路由主键。
     var routeKey: String {
-        return "focus/home"
+        "focus/home"
     }
 
     /// 当前页面的业务身份标识。
     var routeIdentity: String? {
-        return nil
+        nil
     }
 }
 
@@ -867,12 +868,12 @@ extension FocusViewController: YGDRouteStackIdentifiable {
 extension InsightsViewController: YGDRouteStackIdentifiable {
     /// 当前页面对应的业务路由主键。
     var routeKey: String {
-        return "insights/home"
+        "insights/home"
     }
 
     /// 当前页面的业务身份标识。
     var routeIdentity: String? {
-        return nil
+        nil
     }
 }
 
@@ -880,11 +881,11 @@ extension InsightsViewController: YGDRouteStackIdentifiable {
 extension SettingsViewController: YGDRouteStackIdentifiable {
     /// 当前页面对应的业务路由主键。
     var routeKey: String {
-        return "settings/home"
+        "settings/home"
     }
 
     /// 当前页面的业务身份标识。
     var routeIdentity: String? {
-        return nil
+        nil
     }
 }

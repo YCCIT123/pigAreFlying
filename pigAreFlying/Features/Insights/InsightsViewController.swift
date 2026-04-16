@@ -5,8 +5,8 @@
 //  Created by yangchengcheng on 2026/3/25.
 //
 
-import UIKit
 import SnapKit
+import UIKit
 
 final class InsightsViewController: BaseFeatureViewController {
     /// 页面主标题。
@@ -17,6 +17,7 @@ final class InsightsViewController: BaseFeatureViewController {
         label.text = "Insights"
         return label
     }()
+
     /// 页面副标题。
     private lazy var subtitleLabel: UILabel = {
         let label = UILabel()
@@ -26,6 +27,7 @@ final class InsightsViewController: BaseFeatureViewController {
         label.text = "统计页现在独立维护自己的内容，后面接图表和报表时不需要回到基类改模板。"
         return label
     }()
+
     /// 统计结果卡片。
     private lazy var reportCardView: UIView = {
         let view = UIView()
@@ -33,6 +35,7 @@ final class InsightsViewController: BaseFeatureViewController {
         view.layer.cornerRadius = 20
         return view
     }()
+
     /// 统计结果标题。
     private lazy var reportTitleLabel: UILabel = {
         let label = UILabel()
@@ -41,6 +44,7 @@ final class InsightsViewController: BaseFeatureViewController {
         label.text = "本周完成数"
         return label
     }()
+
     /// 统计结果数值。
     private lazy var reportValueLabel: UILabel = {
         let label = UILabel()
@@ -49,6 +53,7 @@ final class InsightsViewController: BaseFeatureViewController {
         label.text = "0"
         return label
     }()
+
     /// 统计结果说明。
     private lazy var reportDescriptionLabel: UILabel = {
         let label = UILabel()

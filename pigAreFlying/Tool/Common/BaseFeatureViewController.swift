@@ -8,7 +8,6 @@
 import UIKit
 
 class BaseFeatureViewController: UIViewController {
-
     /// 页面加载完成后的统一入口。
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -5,8 +5,8 @@
 //  Created by yangchengcheng on 2026/3/25.
 //
 
-import UIKit
 import SnapKit
+import UIKit
 
 final class RootViewController: UIViewController {
     /// 底部标签栏内容区域的可见高度。
@@ -18,31 +18,24 @@ final class RootViewController: UIViewController {
         view.backgroundColor = .clear
         return view
     }()
+
     /// 自定义底部标签栏。
-    private lazy var bottomTabBarView: BottomTabBarView = {
-        let view = BottomTabBarView()
-        return view
-    }()
+    private lazy var bottomTabBarView: BottomTabBarView = .init()
+
     /// Today 页面导航控制器。
-    private lazy var todayNavigationController: UINavigationController = {
-        AppScreenFactory.makeNavigationController(for: .today)
-    }()
+    private lazy var todayNavigationController: UINavigationController = AppScreenFactory.makeNavigationController(for: .today)
+
     /// Tasks 页面导航控制器。
-    private lazy var tasksNavigationController: UINavigationController = {
-        AppScreenFactory.makeNavigationController(for: .tasks)
-    }()
+    private lazy var tasksNavigationController: UINavigationController = AppScreenFactory.makeNavigationController(for: .tasks)
+
     /// Focus 页面导航控制器。
-    private lazy var focusNavigationController: UINavigationController = {
-        AppScreenFactory.makeNavigationController(for: .focus)
-    }()
+    private lazy var focusNavigationController: UINavigationController = AppScreenFactory.makeNavigationController(for: .focus)
+
     /// Insights 页面导航控制器。
-    private lazy var insightsNavigationController: UINavigationController = {
-        AppScreenFactory.makeNavigationController(for: .insights)
-    }()
+    private lazy var insightsNavigationController: UINavigationController = AppScreenFactory.makeNavigationController(for: .insights)
+
     /// Settings 页面导航控制器。
-    private lazy var settingsNavigationController: UINavigationController = {
-        AppScreenFactory.makeNavigationController(for: .settings)
-    }()
+    private lazy var settingsNavigationController: UINavigationController = AppScreenFactory.makeNavigationController(for: .settings)
 
     /// 当前选中的标签页。
     private var selectedTab: AppTab = .today
@@ -88,15 +81,15 @@ extension RootViewController {
     func navigationController(for tab: AppTab) -> UINavigationController {
         switch tab {
         case .today:
-            return todayNavigationController
+            todayNavigationController
         case .tasks:
-            return tasksNavigationController
+            tasksNavigationController
         case .focus:
-            return focusNavigationController
+            focusNavigationController
         case .insights:
-            return insightsNavigationController
+            insightsNavigationController
         case .settings:
-            return settingsNavigationController
+            settingsNavigationController
         }
     }
 
@@ -130,7 +123,7 @@ extension RootViewController {
 
 extension RootViewController: BottomTabBarViewDelegate {
     /// 处理底部标签栏的选择事件。
-    func bottomTabBarView(_ bottomTabBarView: BottomTabBarView, didSelect tab: AppTab, repeatedTap: Bool) {
+    func bottomTabBarView(_: BottomTabBarView, didSelect tab: AppTab, repeatedTap: Bool) {
         if repeatedTap {
             navigationController(for: tab).popToRootViewController(animated: false)
             return
@@ -148,6 +141,6 @@ extension RootViewController: YGDAppNavigator {
 
     /// 返回当前正在使用的导航控制器。
     func currentNavigationController() -> UINavigationController {
-        return navigationController(for: selectedTab)
+        navigationController(for: selectedTab)
     }
 }

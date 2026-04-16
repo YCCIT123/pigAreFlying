@@ -5,11 +5,10 @@
 //  Created by yangchengcheng on 2026/3/25.
 //
 
-import UIKit
 import SnapKit
+import UIKit
 
 final class TasksViewController: BaseFeatureViewController {
-
     /// 页面主标题。
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
@@ -18,6 +17,7 @@ final class TasksViewController: BaseFeatureViewController {
         label.text = "Tasks"
         return label
     }()
+
     /// 页面副标题。
     private lazy var subtitleLabel: UILabel = {
         let label = UILabel()
@@ -27,6 +27,7 @@ final class TasksViewController: BaseFeatureViewController {
         label.text = "这个页面单独管理任务列表和任务操作，不再依赖公共展示模板。"
         return label
     }()
+
     /// 任务列表占位卡片。
     private lazy var inboxCardView: UIView = {
         let view = UIView()
@@ -34,6 +35,7 @@ final class TasksViewController: BaseFeatureViewController {
         view.layer.cornerRadius = 20
         return view
     }()
+
     /// 任务列表卡片标题。
     private lazy var inboxTitleLabel: UILabel = {
         let label = UILabel()
@@ -42,6 +44,7 @@ final class TasksViewController: BaseFeatureViewController {
         label.text = "任务收集箱"
         return label
     }()
+
     /// 任务列表卡片描述。
     private lazy var inboxDescriptionLabel: UILabel = {
         let label = UILabel()
@@ -51,6 +54,7 @@ final class TasksViewController: BaseFeatureViewController {
         label.text = "这里后续可以直接接任务列表、筛选条件和详情跳转。"
         return label
     }()
+
     /// 新建任务按钮。
     private lazy var addTaskButton: UIButton = {
         var configuration = UIButton.Configuration.borderedProminent()

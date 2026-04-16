@@ -22,15 +22,15 @@ enum AppScreenFactory {
     private static func makeRootViewController(for tab: AppTab) -> UIViewController {
         switch tab {
         case .today:
-            return TodayViewController()
+            TodayViewController()
         case .tasks:
-            return TasksViewController()
+            TasksViewController()
         case .focus:
-            return FocusViewController()
+            FocusViewController()
         case .insights:
-            return InsightsViewController()
+            InsightsViewController()
         case .settings:
-            return SettingsViewController()
+            SettingsViewController()
         }
     }
 }

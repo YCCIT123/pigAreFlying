@@ -21,11 +21,11 @@ enum AppRouteBootstrap {
 
         router.applyRemoteRules([
             YGDRemoteRouteRule(matchPrefix: "pig://legacy/tasks/detail", action: .rewrite(targetPrefix: "pig://tasks/detail")),
-            YGDRemoteRouteRule(matchPrefix: "pig://tasks/detail", action: .forceNativeVersion("v2"))
+            YGDRemoteRouteRule(matchPrefix: "pig://tasks/detail", action: .forceNativeVersion("v2")),
         ])
 
         router.appendInterceptor { urlString in
-            return urlString.contains("forbidden") == false
+            urlString.contains("forbidden") == false
         }
     }
 }

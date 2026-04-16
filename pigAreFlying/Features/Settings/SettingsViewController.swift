@@ -5,8 +5,8 @@
 //  Created by yangchengcheng on 2026/3/25.
 //
 
-import UIKit
 import SnapKit
+import UIKit
 
 final class SettingsViewController: BaseFeatureViewController {
     /// 页面主标题。
@@ -17,6 +17,7 @@ final class SettingsViewController: BaseFeatureViewController {
         label.text = "Settings"
         return label
     }()
+
     /// 页面副标题。
     private lazy var subtitleLabel: UILabel = {
         let label = UILabel()
@@ -26,6 +27,7 @@ final class SettingsViewController: BaseFeatureViewController {
         label.text = "设置页现在单独维护自己的内容区域，后面可以直接往这里加账号、偏好和调试功能。"
         return label
     }()
+
     /// 设置内容卡片。
     private lazy var settingsCardView: UIView = {
         let view = UIView()
@@ -33,6 +35,7 @@ final class SettingsViewController: BaseFeatureViewController {
         view.layer.cornerRadius = 20
         return view
     }()
+
     /// 设置项标题。
     private lazy var settingsTitleLabel: UILabel = {
         let label = UILabel()
@@ -41,6 +44,7 @@ final class SettingsViewController: BaseFeatureViewController {
         label.text = "页面设置"
         return label
     }()
+
     /// 设置项说明。
     private lazy var settingsDescriptionLabel: UILabel = {
         let label = UILabel()
@@ -50,6 +54,7 @@ final class SettingsViewController: BaseFeatureViewController {
         label.text = "这里先保留一个独立设置卡片，后续可以继续拆成账号设置、提醒设置和通用配置。"
         return label
     }()
+
     /// 管理设置按钮。
     private lazy var manageButton: UIButton = {
         var configuration = UIButton.Configuration.bordered()
