@@ -23,10 +23,6 @@ enum AppRouteBootstrap {
             YGDRemoteRouteRule(matchPrefix: "pig://legacy/tasks/detail", action: .rewrite(targetPrefix: "pig://tasks/detail")),
             YGDRemoteRouteRule(matchPrefix: "pig://tasks/detail", action: .forceNativeVersion("v2")),
         ])
-
-        router.appendInterceptor { urlString in
-            urlString.contains("forbidden") == false
-        }
     }
 }
 
@@ -51,11 +47,33 @@ enum TasksRouterRegistrar {
         }
 
         router.registerRoute(routeKey: "tasks/detail", tab: .tasks, version: "v1", identityParamKeys: ["id"]) { target in
-            YGDTaskDetailV1Coordinator(target: target)
+            YGDStaticViewControllerCoordinator(target: target) {
+                YGDDetailPageViewController(
+                    target: target,
+                    config: YGDDetailPageConfig(
+                        title: "Task Detail V1",
+                        description: "旧版任务详情路由页面，用于验证 routeKey 与 identity 的栈内复用。",
+                        routeKey: "tasks/detail",
+                        nextRoute: nil,
+                        nextButtonTitle: "下一级"
+                    )
+                )
+            }
         }
 
         router.registerRoute(routeKey: "tasks/detail", tab: .tasks, version: "v2", identityParamKeys: ["id"]) { target in
-            YGDTaskDetailV2Coordinator(target: target)
+            YGDStaticViewControllerCoordinator(target: target) {
+                YGDDetailPageViewController(
+                    target: target,
+                    config: YGDDetailPageConfig(
+                        title: "Task Detail V2",
+                        description: "新版任务详情路由页面，可被远端规则强制命中。",
+                        routeKey: "tasks/detail",
+                        nextRoute: nil,
+                        nextButtonTitle: "下一级"
+                    )
+                )
+            }
         }
     }
 }
@@ -71,7 +89,18 @@ enum FocusRouterRegistrar {
         }
 
         router.registerRoute(routeKey: "focus/session", tab: .focus, version: "v1", identityParamKeys: ["id"]) { target in
-            YGDFocusSessionCoordinator(target: target)
+            YGDStaticViewControllerCoordinator(target: target) {
+                YGDDetailPageViewController(
+                    target: target,
+                    config: YGDDetailPageConfig(
+                        title: "Focus Session",
+                        description: "专注会话路由页面，用于验证跨模块跳转和已有页面回退。",
+                        routeKey: "focus/session",
+                        nextRoute: nil,
+                        nextButtonTitle: "下一级"
+                    )
+                )
+            }
         }
     }
 }

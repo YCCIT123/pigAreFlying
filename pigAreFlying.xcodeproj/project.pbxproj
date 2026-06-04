@@ -24,6 +24,18 @@
 		D10000052F74000100B540BB /* AppScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000062F74000100B540BB /* AppScreenFactory.swift */; };
 		D10000072F74000100B540BB /* BottomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000082F74000100B540BB /* BottomTabBarView.swift */; };
 		D10000092F74000100B540BB /* BaseFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D100000A2F74000100B540BB /* BaseFeatureViewController.swift */; };
+		E10000000000000000000001 /* YGDRouteModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000002 /* YGDRouteModels.swift */; };
+		E10000000000000000000003 /* YGDRouteProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000004 /* YGDRouteProtocols.swift */; };
+		E10000000000000000000005 /* YGDRouteDecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000006 /* YGDRouteDecision.swift */; };
+		E10000000000000000000007 /* YGDRouteRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000008 /* YGDRouteRegistry.swift */; };
+		E10000000000000000000009 /* YGDRouteURLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1000000000000000000000A /* YGDRouteURLParser.swift */; };
+		E1000000000000000000000B /* YGDRemoteRouteRuleEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1000000000000000000000C /* YGDRemoteRouteRuleEngine.swift */; };
+		E1000000000000000000000D /* YGDRouterManager+Resolving.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1000000000000000000000E /* YGDRouterManager+Resolving.swift */; };
+		E1000000000000000000000F /* YGDRouterManager+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000010 /* YGDRouterManager+Navigation.swift */; };
+		E10000000000000000000011 /* YGDStaticViewControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000012 /* YGDStaticViewControllerCoordinator.swift */; };
+		E10000000000000000000013 /* YGDRouteStackIdentifiable+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000014 /* YGDRouteStackIdentifiable+App.swift */; };
+		E10000000000000000000015 /* String+YGD.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000016 /* String+YGD.swift */; };
+		E10000000000000000000017 /* YGDDetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000018 /* YGDDetailPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +60,18 @@
 		D10000062F74000100B540BB /* AppScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScreenFactory.swift; sourceTree = "<group>"; };
 		D10000082F74000100B540BB /* BottomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabBarView.swift; sourceTree = "<group>"; };
 		D100000A2F74000100B540BB /* BaseFeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseFeatureViewController.swift; sourceTree = "<group>"; };
+		E10000000000000000000002 /* YGDRouteModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YGDRouteModels.swift; sourceTree = "<group>"; };
+		E10000000000000000000004 /* YGDRouteProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YGDRouteProtocols.swift; sourceTree = "<group>"; };
+		E10000000000000000000006 /* YGDRouteDecision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YGDRouteDecision.swift; sourceTree = "<group>"; };
+		E10000000000000000000008 /* YGDRouteRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YGDRouteRegistry.swift; sourceTree = "<group>"; };
+		E1000000000000000000000A /* YGDRouteURLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YGDRouteURLParser.swift; sourceTree = "<group>"; };
+		E1000000000000000000000C /* YGDRemoteRouteRuleEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YGDRemoteRouteRuleEngine.swift; sourceTree = "<group>"; };
+		E1000000000000000000000E /* YGDRouterManager+Resolving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YGDRouterManager+Resolving.swift"; sourceTree = "<group>"; };
+		E10000000000000000000010 /* YGDRouterManager+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YGDRouterManager+Navigation.swift"; sourceTree = "<group>"; };
+		E10000000000000000000012 /* YGDStaticViewControllerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YGDStaticViewControllerCoordinator.swift; sourceTree = "<group>"; };
+		E10000000000000000000014 /* YGDRouteStackIdentifiable+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YGDRouteStackIdentifiable+App.swift"; sourceTree = "<group>"; };
+		E10000000000000000000016 /* String+YGD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+YGD.swift"; sourceTree = "<group>"; };
+		E10000000000000000000018 /* YGDDetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YGDDetailPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +188,7 @@
 			children = (
 				D100000D2F74000100B540BB /* Common */,
 				C67707262F76204800436888 /* Router */,
+				E10000000000000000000019 /* Extension */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -171,7 +196,17 @@
 		C67707262F76204800436888 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				E10000000000000000000004 /* YGDRouteProtocols.swift */,
+				E10000000000000000000002 /* YGDRouteModels.swift */,
+				E10000000000000000000006 /* YGDRouteDecision.swift */,
+				E10000000000000000000008 /* YGDRouteRegistry.swift */,
+				E1000000000000000000000A /* YGDRouteURLParser.swift */,
+				E1000000000000000000000C /* YGDRemoteRouteRuleEngine.swift */,
 				C67707272F76206F00436888 /* YGDRouterManager.swift */,
+				E1000000000000000000000E /* YGDRouterManager+Resolving.swift */,
+				E10000000000000000000010 /* YGDRouterManager+Navigation.swift */,
+				E10000000000000000000012 /* YGDStaticViewControllerCoordinator.swift */,
+				E10000000000000000000014 /* YGDRouteStackIdentifiable+App.swift */,
 				C67707292F7685EF00436888 /* YGDUnifiedRegistrationRouter.swift */,
 			);
 			path = Router;
@@ -181,8 +216,17 @@
 			isa = PBXGroup;
 			children = (
 				D100000A2F74000100B540BB /* BaseFeatureViewController.swift */,
+				E10000000000000000000018 /* YGDDetailPageViewController.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		E10000000000000000000019 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E10000000000000000000016 /* String+YGD.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		F84878A5E1A63791F7AC3A58 /* Frameworks */ = {
@@ -227,6 +271,7 @@
 				TargetAttributes = {
 					C66585F62F73AD6600D8F806 = {
 						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 2630;
 					};
 				};
 			};
@@ -315,11 +360,23 @@
 				C6D5053E2F7A1B71000F1141 /* YCGTodayHomeCoordinator.swift in Sources */,
 				D10000072F74000100B540BB /* BottomTabBarView.swift in Sources */,
 				D10000092F74000100B540BB /* BaseFeatureViewController.swift in Sources */,
+				E10000000000000000000003 /* YGDRouteProtocols.swift in Sources */,
+				E10000000000000000000001 /* YGDRouteModels.swift in Sources */,
 				D10000032F74000100B540BB /* AppTab.swift in Sources */,
 				C6560C572F73CE6600B540BB /* RootViewController.swift in Sources */,
+				E10000000000000000000017 /* YGDDetailPageViewController.swift in Sources */,
+				E10000000000000000000005 /* YGDRouteDecision.swift in Sources */,
+				E10000000000000000000007 /* YGDRouteRegistry.swift in Sources */,
+				E10000000000000000000009 /* YGDRouteURLParser.swift in Sources */,
+				E1000000000000000000000B /* YGDRemoteRouteRuleEngine.swift in Sources */,
 				C67707282F76206F00436888 /* YGDRouterManager.swift in Sources */,
+				E1000000000000000000000D /* YGDRouterManager+Resolving.swift in Sources */,
+				E1000000000000000000000F /* YGDRouterManager+Navigation.swift in Sources */,
+				E10000000000000000000011 /* YGDStaticViewControllerCoordinator.swift in Sources */,
+				E10000000000000000000013 /* YGDRouteStackIdentifiable+App.swift in Sources */,
 				C677072A2F7685EF00436888 /* YGDUnifiedRegistrationRouter.swift in Sources */,
 				C6560C612F73CEB600B540BB /* TodayViewController.swift in Sources */,
+				E10000000000000000000015 /* String+YGD.swift in Sources */,
 				C68576B82F8E19CA00466E0A /* TodayCollectionViewCell.swift in Sources */,
 				C6560C5D2F73CE9F00B540BB /* FocusViewController.swift in Sources */,
 				C6560C4E2F73C90800B540BB /* AppDelegate.swift in Sources */,
@@ -338,6 +395,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 86ZRJWW86U;
@@ -356,6 +414,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cn.chengchengyang.pigAreFlying;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "pigAreFlying/pigAreFlying-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -367,6 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 86ZRJWW86U;
@@ -385,6 +446,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cn.chengchengyang.pigAreFlying;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "pigAreFlying/pigAreFlying-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
