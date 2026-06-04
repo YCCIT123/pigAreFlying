@@ -1,0 +1,6 @@
+framework module YGDInsightsModule {
+  umbrella header "YGDInsightsModule-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module YGDFocusModule {
+  umbrella header "YGDFocusModule-umbrella.h"
+
+  export *
+  module * { export * }
+}

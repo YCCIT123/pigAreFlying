@@ -5,14 +5,81 @@ PODS:
   - LookinServer/Core (1.0.9)
   - lottie-ios (4.4.1)
   - SnapKit (5.7.1)
+  - YGDCoreKit (0.1.1)
+  - YGDFocusModule (0.1.1):
+    - SnapKit
+    - YGDCoreKit
+    - YGDModuleBridgeKit
+    - YGDRouterKit
+    - YGDUIKitKit
+  - YGDInsightsModule (0.1.1):
+    - SnapKit
+    - YGDCoreKit
+    - YGDModuleBridgeKit
+    - YGDRouterKit
+    - YGDUIKitKit
+  - YGDModuleBridgeKit (0.1.1):
+    - YGDCoreKit
+    - YGDRouterKit
+  - YGDModuleIndexKit (0.1.1):
+    - YGDFocusModule
+    - YGDInsightsModule
+    - YGDModuleBridgeKit
+    - YGDSettingsModule
+    - YGDTasksModule
+    - YGDTodayModule
+  - YGDRouterKit (0.1.1):
+    - YGDCoreKit
+  - YGDSettingsModule (0.1.1):
+    - SnapKit
+    - YGDCoreKit
+    - YGDModuleBridgeKit
+    - YGDRouterKit
+    - YGDUIKitKit
+  - YGDTasksModule (0.1.1):
+    - SnapKit
+    - YGDCoreKit
+    - YGDModuleBridgeKit
+    - YGDRouterKit
+    - YGDUIKitKit
+  - YGDTodayModule (0.1.1):
+    - SnapKit
+    - YGDCoreKit
+    - YGDModuleBridgeKit
+    - YGDRouterKit
+    - YGDUIKitKit
+  - YGDUIKitKit (0.1.1):
+    - SnapKit
+    - YGDCoreKit
 
 DEPENDENCIES:
   - Alamofire (~> 5.4)
   - LookinServer (~> 1.0.0)
   - lottie-ios (= 4.4.1)
   - SnapKit (~> 5.7.0)
+  - YGDCoreKit (= 0.1.1)
+  - YGDFocusModule (= 0.1.1)
+  - YGDInsightsModule (= 0.1.1)
+  - YGDModuleBridgeKit (= 0.1.1)
+  - YGDModuleIndexKit (= 0.1.1)
+  - YGDRouterKit (= 0.1.1)
+  - YGDSettingsModule (= 0.1.1)
+  - YGDTasksModule (= 0.1.1)
+  - YGDTodayModule (= 0.1.1)
+  - YGDUIKitKit (= 0.1.1)
 
 SPEC REPOS:
+  https://github.com/best-pig/YGDSpecs.git:
+    - YGDCoreKit
+    - YGDFocusModule
+    - YGDInsightsModule
+    - YGDModuleBridgeKit
+    - YGDModuleIndexKit
+    - YGDRouterKit
+    - YGDSettingsModule
+    - YGDTasksModule
+    - YGDTodayModule
+    - YGDUIKitKit
   trunk:
     - Alamofire
     - LookinServer
@@ -24,7 +91,17 @@ SPEC CHECKSUMS:
   LookinServer: 5d46766710ddac83ea072fa5a0351d1e74c0fd10
   lottie-ios: e047b1d2e6239b787cc5e9755b988869cf190494
   SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
+  YGDCoreKit: 0d73155788982f01e83558260e4e69066568460a
+  YGDFocusModule: 8b367458146a4c2f304f11dbeff4cbdf3b7a9494
+  YGDInsightsModule: 4b2fd630c8b4dd9f638eac58abb9dd8f2dc847dc
+  YGDModuleBridgeKit: e2b7790d5413b1439fdb77182434501ba41f2c78
+  YGDModuleIndexKit: 1a5a3e4afffaa6169436f42a65246530639f4e5f
+  YGDRouterKit: 0d2dd61e2273f4e5f1ca84e8882ff2cd841d5f4b
+  YGDSettingsModule: 614f5fb7934084bdac4c62aabf9e12c521483cce
+  YGDTasksModule: 10ad92fdf1e300142a3a3b0005e083dba65727d2
+  YGDTodayModule: 10699b6f86c8a6d1d92723571b2b328f19bd5f15
+  YGDUIKitKit: 003caa7fe027c9b11425b138ffcc8a8698831c5e
 
-PODFILE CHECKSUM: f2945bb3edc7a1f1315f0755550c95cbae75d016
+PODFILE CHECKSUM: 479237ae07add54eba140ebd513e684e5c1383e4
 
 COCOAPODS: 1.16.2

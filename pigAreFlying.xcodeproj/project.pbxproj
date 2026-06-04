@@ -11,31 +11,8 @@
 		C6560C4C2F73C90800B540BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6560C482F73C90800B540BB /* Assets.xcassets */; };
 		C6560C4E2F73C90800B540BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6560C472F73C90800B540BB /* AppDelegate.swift */; };
 		C6560C572F73CE6600B540BB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6560C562F73CE6600B540BB /* RootViewController.swift */; };
-		C6560C592F73CE8700B540BB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6560C582F73CE8700B540BB /* SettingsViewController.swift */; };
-		C6560C5B2F73CE9300B540BB /* InsightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6560C5A2F73CE9300B540BB /* InsightsViewController.swift */; };
-		C6560C5D2F73CE9F00B540BB /* FocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6560C5C2F73CE9F00B540BB /* FocusViewController.swift */; };
-		C6560C5F2F73CEA900B540BB /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6560C5E2F73CEA900B540BB /* TasksViewController.swift */; };
-		C6560C612F73CEB600B540BB /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6560C602F73CEB600B540BB /* TodayViewController.swift */; };
-		C67707282F76206F00436888 /* YGDRouterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67707272F76206F00436888 /* YGDRouterManager.swift */; };
-		C677072A2F7685EF00436888 /* YGDUnifiedRegistrationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67707292F7685EF00436888 /* YGDUnifiedRegistrationRouter.swift */; };
-		C68576B82F8E19CA00466E0A /* TodayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68576B72F8E19CA00466E0A /* TodayCollectionViewCell.swift */; };
-		C6D5053E2F7A1B71000F1141 /* YCGTodayHomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D5053D2F7A1B71000F1141 /* YCGTodayHomeCoordinator.swift */; };
-		D10000032F74000100B540BB /* AppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000042F74000100B540BB /* AppTab.swift */; };
 		D10000052F74000100B540BB /* AppScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000062F74000100B540BB /* AppScreenFactory.swift */; };
 		D10000072F74000100B540BB /* BottomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000082F74000100B540BB /* BottomTabBarView.swift */; };
-		D10000092F74000100B540BB /* BaseFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D100000A2F74000100B540BB /* BaseFeatureViewController.swift */; };
-		E10000000000000000000001 /* YGDRouteModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000002 /* YGDRouteModels.swift */; };
-		E10000000000000000000003 /* YGDRouteProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000004 /* YGDRouteProtocols.swift */; };
-		E10000000000000000000005 /* YGDRouteDecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000006 /* YGDRouteDecision.swift */; };
-		E10000000000000000000007 /* YGDRouteRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000008 /* YGDRouteRegistry.swift */; };
-		E10000000000000000000009 /* YGDRouteURLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1000000000000000000000A /* YGDRouteURLParser.swift */; };
-		E1000000000000000000000B /* YGDRemoteRouteRuleEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1000000000000000000000C /* YGDRemoteRouteRuleEngine.swift */; };
-		E1000000000000000000000D /* YGDRouterManager+Resolving.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1000000000000000000000E /* YGDRouterManager+Resolving.swift */; };
-		E1000000000000000000000F /* YGDRouterManager+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000010 /* YGDRouterManager+Navigation.swift */; };
-		E10000000000000000000011 /* YGDStaticViewControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000012 /* YGDStaticViewControllerCoordinator.swift */; };
-		E10000000000000000000013 /* YGDRouteStackIdentifiable+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000014 /* YGDRouteStackIdentifiable+App.swift */; };
-		E10000000000000000000015 /* String+YGD.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000016 /* String+YGD.swift */; };
-		E10000000000000000000017 /* YGDDetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000018 /* YGDDetailPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,11 +75,8 @@
 		C6560C4B2F73C90800B540BB /* pigAreFlying */ = {
 			isa = PBXGroup;
 			children = (
-				C67707252F76202E00436888 /* Tool */,
-				D10000042F74000100B540BB /* AppTab.swift */,
 				D10000062F74000100B540BB /* AppScreenFactory.swift */,
 				D10000082F74000100B540BB /* BottomTabBarView.swift */,
-				C6560C502F73C90C00B540BB /* Features */,
 				C6560C472F73C90800B540BB /* AppDelegate.swift */,
 				C6560C482F73C90800B540BB /* Assets.xcassets */,
 				C6560C492F73C90800B540BB /* Info.plist */,
@@ -336,13 +310,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-pigAreFlying/Pods-pigAreFlying-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-pigAreFlying/Pods-pigAreFlying-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -357,32 +327,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D10000052F74000100B540BB /* AppScreenFactory.swift in Sources */,
-				C6D5053E2F7A1B71000F1141 /* YCGTodayHomeCoordinator.swift in Sources */,
 				D10000072F74000100B540BB /* BottomTabBarView.swift in Sources */,
-				D10000092F74000100B540BB /* BaseFeatureViewController.swift in Sources */,
-				E10000000000000000000003 /* YGDRouteProtocols.swift in Sources */,
-				E10000000000000000000001 /* YGDRouteModels.swift in Sources */,
-				D10000032F74000100B540BB /* AppTab.swift in Sources */,
 				C6560C572F73CE6600B540BB /* RootViewController.swift in Sources */,
-				E10000000000000000000017 /* YGDDetailPageViewController.swift in Sources */,
-				E10000000000000000000005 /* YGDRouteDecision.swift in Sources */,
-				E10000000000000000000007 /* YGDRouteRegistry.swift in Sources */,
-				E10000000000000000000009 /* YGDRouteURLParser.swift in Sources */,
-				E1000000000000000000000B /* YGDRemoteRouteRuleEngine.swift in Sources */,
-				C67707282F76206F00436888 /* YGDRouterManager.swift in Sources */,
-				E1000000000000000000000D /* YGDRouterManager+Resolving.swift in Sources */,
-				E1000000000000000000000F /* YGDRouterManager+Navigation.swift in Sources */,
-				E10000000000000000000011 /* YGDStaticViewControllerCoordinator.swift in Sources */,
-				E10000000000000000000013 /* YGDRouteStackIdentifiable+App.swift in Sources */,
-				C677072A2F7685EF00436888 /* YGDUnifiedRegistrationRouter.swift in Sources */,
-				C6560C612F73CEB600B540BB /* TodayViewController.swift in Sources */,
-				E10000000000000000000015 /* String+YGD.swift in Sources */,
-				C68576B82F8E19CA00466E0A /* TodayCollectionViewCell.swift in Sources */,
-				C6560C5D2F73CE9F00B540BB /* FocusViewController.swift in Sources */,
 				C6560C4E2F73C90800B540BB /* AppDelegate.swift in Sources */,
-				C6560C5B2F73CE9300B540BB /* InsightsViewController.swift in Sources */,
-				C6560C592F73CE8700B540BB /* SettingsViewController.swift in Sources */,
-				C6560C5F2F73CEA900B540BB /* TasksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

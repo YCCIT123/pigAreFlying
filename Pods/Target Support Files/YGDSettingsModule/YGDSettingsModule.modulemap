@@ -1,0 +1,6 @@
+framework module YGDSettingsModule {
+  umbrella header "YGDSettingsModule-umbrella.h"
+
+  export *
+  module * { export * }
+}

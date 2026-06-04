@@ -1,0 +1,6 @@
+framework module YGDCoreKit {
+  umbrella header "YGDCoreKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

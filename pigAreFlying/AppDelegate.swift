@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import YGDModuleBridgeKit
+import YGDModuleIndexKit
+import YGDRouterKit
 
 /// 应用启动代理，负责装配根窗口和初始化路由系统。
 @main
@@ -15,7 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     /// 应用启动完成后的统一入口。
     func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        AppRouteBootstrap.registerAllRoutes()
+        YGDModuleIndexBootstrap.registerAllModules()
+        YGDFeatureModuleRegistry.shared.registerAllRoutes(to: YGDRouterManager.shared)
+        YGDRouterManager.shared.applyRemoteRules([
+            YGDRemoteRouteRule(matchPrefix: "pig://legacy/tasks/detail", action: .rewrite(targetPrefix: "pig://tasks/detail")),
+            YGDRemoteRouteRule(matchPrefix: "pig://tasks/detail", action: .forceNativeVersion("v2")),
+        ])
 
         let rootViewController = RootViewController()
         YGDRouterManager.shared.attachAppNavigator(rootViewController)

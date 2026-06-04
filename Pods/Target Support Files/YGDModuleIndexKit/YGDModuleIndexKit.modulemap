@@ -1,0 +1,6 @@
+framework module YGDModuleIndexKit {
+  umbrella header "YGDModuleIndexKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

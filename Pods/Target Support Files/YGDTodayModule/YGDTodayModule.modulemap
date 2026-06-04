@@ -1,0 +1,6 @@
+framework module YGDTodayModule {
+  umbrella header "YGDTodayModule-umbrella.h"
+
+  export *
+  module * { export * }
+}

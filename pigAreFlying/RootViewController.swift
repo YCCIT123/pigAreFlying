@@ -7,6 +7,8 @@
 
 import SnapKit
 import UIKit
+import YGDCoreKit
+import YGDRouterKit
 
 final class RootViewController: UIViewController {
     /// 底部标签栏内容区域的可见高度。
@@ -46,7 +48,6 @@ final class RootViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        YGDRouterManager.shared.attachAppNavigator(self)
         setupViewHierarchy()
         setupConstraints()
         bottomTabBarView.delegate = self

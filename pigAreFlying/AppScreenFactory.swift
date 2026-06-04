@@ -2,10 +2,12 @@
 //  AppScreenFactory.swift
 //  pigAreFlying
 //
-//  Created by Codex on 2026/3/25.
+//  Created by yangchengcheng on 2026/3/25.
 //
 
 import UIKit
+import YGDCoreKit
+import YGDModuleBridgeKit
 
 enum AppScreenFactory {
     /// 创建指定标签页对应的导航控制器。
@@ -20,17 +22,18 @@ enum AppScreenFactory {
 
     /// 创建指定标签页对应的根控制器。
     private static func makeRootViewController(for tab: AppTab) -> UIViewController {
-        switch tab {
-        case .today:
-            TodayViewController()
-        case .tasks:
-            TasksViewController()
-        case .focus:
-            FocusViewController()
-        case .insights:
-            InsightsViewController()
-        case .settings:
-            SettingsViewController()
+        if let rootViewController = YGDFeatureModuleRegistry.shared.makeRootViewController(for: tab) {
+            return rootViewController
         }
+
+        return makeFallbackViewController(for: tab)
+    }
+
+    /// 创建模块缺失时的兜底页面。
+    private static func makeFallbackViewController(for tab: AppTab) -> UIViewController {
+        let viewController = UIViewController()
+        viewController.view.backgroundColor = .systemBackground
+        viewController.title = tab.title
+        return viewController
     }
 }

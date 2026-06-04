@@ -2,11 +2,12 @@
 //  BottomTabBarView.swift
 //  pigAreFlying
 //
-//  Created by Codex on 2026/3/25.
+//  Created by yangchengcheng on 2026/3/25.
 //
 
 import SnapKit
 import UIKit
+import YGDCoreKit
 
 protocol BottomTabBarViewDelegate: AnyObject {
     /// 处理底部标签栏的点击事件。

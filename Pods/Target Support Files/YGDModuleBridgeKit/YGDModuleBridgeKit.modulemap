@@ -1,0 +1,6 @@
+framework module YGDModuleBridgeKit {
+  umbrella header "YGDModuleBridgeKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
